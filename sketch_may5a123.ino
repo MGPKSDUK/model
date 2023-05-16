@@ -16,7 +16,7 @@ void loop() {
   
   Serial.println(n);
   if((x == 0) && (n == 0)){
- for(int i = 0;i<=180;i=i+20){
+ for(int i = 0;i<=120;i=i+15){
    m.write(i);
    delay(500);
    
@@ -24,7 +24,7 @@ void loop() {
  n++;
   }
  else if((x != 0) && (n == 1)){
- for(int i = 180;i>=0;i=i-20){
+ for(int i = 120;i>=0;i=i-15){
    m.write(i);
    delay(500);
    
